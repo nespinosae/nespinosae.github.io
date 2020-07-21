@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Instalar Tema</title>
-      <link>https://nespinosae.github.io/docs/instalar-tema/</link>
-      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
-      
-      <guid>https://nespinosae.github.io/docs/instalar-tema/</guid>
-      <description>Tutorial de intalación del tema utilizando el Framework Hugo.</description>
-    </item>
-    
-    <item>
       <title>Configuración</title>
       <link>https://nespinosae.github.io/docs/configuracion/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
@@ -48,21 +39,22 @@
     </item>
     
     <item>
-      <title>Objetivos del Curso</title>
-      <link>https://nespinosae.github.io/docs/objetivos/</link>
+      <title>DCW Chair</title>
+      <link>https://nespinosae.github.io/docs/dcw-chair/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://nespinosae.github.io/docs/objetivos/</guid>
-      <description>Objetivos general y específico del Taller del segundo trimestre de 2020.</description>
+      <guid>https://nespinosae.github.io/docs/dcw-chair/</guid>
+      <description>En esta sección mostraré la historia y la planimetria de la silla creada por Charles y Ray Eames.
+ &amp;ldquo;Lo que funciona bien es mejor a lo que se ve bien, porque lo que funciona bien permanece en el tiempo&amp;rdquo; Ray eames</description>
     </item>
     
     <item>
-      <title>Entrega 01</title>
-      <link>https://nespinosae.github.io/docs/entrega-01/</link>
+      <title>Mecanizado CNC</title>
+      <link>https://nespinosae.github.io/docs/mecanizado-cnc/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://nespinosae.github.io/docs/entrega-01/</guid>
-      <description>En esta sección mostraré la planimetría de una silla realizada en Fusion 360. Luego estas fueron editadas en Illustrator y finalmente han sido subidas a mi sitio de Fabricación Digital.</description>
+      <guid>https://nespinosae.github.io/docs/mecanizado-cnc/</guid>
+      <description>En esta sección de mecanizado CNC, explicaré cual es el funcionamiento de esta maquina, entregaré un link para descargar su manual de uso y finalmente mostraré un video paso a paso de como hacer que un objeto 3d (en este caso la silla Fresia) se pueda configurar en Fusion 360 para que luego sea cortada.</description>
     </item>
     
   </channel>
