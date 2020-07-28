@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>3. Moldeo y Fundición - Nicolás Espinosa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="https://nespinosae.github.io/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="/css/style.min.df52c7c8fb17040fdfb216293b7a711034ee517647a54f8a626ea24f0382f02b.css">
+  
+
+  
+
+</head>
+
+<body class='page page-default-single'>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+  <div class="wrapper">
+    <div class='header'>
+  <div class="container">
+    <div class="logo">
+      <a href="https://nespinosae.github.io"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="https://nespinosae.github.io"><img alt="Logo" src="/images/logo.png" /></a>
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    
+    
+    <li class="menu-item-inicio">
+      <a href="/">
+        <span>Inicio</span>
+      </a>
+    </li>
+    
+    <li class="menu-item-documentación">
+      <a href="/docs/">
+        <span>Documentación</span>
+      </a>
+    </li>
+    
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+
+
+    
+    
+    
+    
+    
+    
+
+    
+    <div class="container pt-2 pt-md-6 pb-3 pb-md-6">
+      <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <div class="sidebar">
+            
+<div class="docs-menu">
+  <h4>Documentación</h4>
+  <ul>
+    
+    <li class="">
+      <a href="https://nespinosae.github.io/docs/configuracion/">Configuración</a>
+    </li>
+    
+    <li class="">
+      <a href="https://nespinosae.github.io/docs/ejemplo/">Ejemplo Shortcodes</a>
+    </li>
+    
+    <li class="">
+      <a href="https://nespinosae.github.io/docs/markdown/">Ejemplos Markdown</a>
+    </li>
+    
+    <li class="">
+      <a href="https://nespinosae.github.io/docs/dcw-chair/">1. DCW Chair</a>
+    </li>
+    
+    <li class="">
+      <a href="https://nespinosae.github.io/docs/mecanizado-cnc/">2. Mecanizado CNC</a>
+    </li>
+    
+    <li class="active ">
+      <a href="https://nespinosae.github.io/docs/moldeo-y-fundici%C3%B3n/">3. Moldeo y Fundición</a>
+    </li>
+    
+  </ul>
+</div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-9">
+          
+<h1 class="title">3. Moldeo y Fundición</h1>
+<div class="content ">
+  <hr>
+<p>En esta sección de moldeo y fundición, explicaré que es el mecanizado 2.5D y luego mediante la tecnica de desbaste mostraré paso a paso como aplicarla en la silla fresia.</p>
+<h3 id="1-que-es-el-mecanizado-25d">1) ¿Que es el mecanizado 2.5d?</h3>
+<p>Las operaciones de mecanizado en 2.5 ejes son un conjunto de procedimientos que se pueden aplicar en centros de mecanizado 2.5 ejes y 3 ejes (comúnmente conocidas como fresadoras), para fabricar piezas de distintos materiales, moviendo la herramienta en las coordenadas X e Y a la vez durante el corte de material o arranque de viruta.</p>
+<p>En un mecanizado por corte de 2.5 ejes, la herramienta se puede llegar a mover en un máximo de 3 ejes de la máquina (XYZ), pero nunca se moverá en las tres coordenadas a la vez durante la trayectoria de corte.</p>
+<p>En las dos imágenes que se muestran a continuación (fig.1), las trayectorias de corte (representadas por líneas continuas de color azul claro) están contenidas siempre en planos paralelos al XY (plano de la base), de modo que se trata de un mecanizado en 2,5 ejes.</p>
+<p><img src="/img/m25d/1.jpeg" alt="2.5d"></p>
+<p>Las operaciones de mecanizado en 2.5 ejes más comunes son:</p>
+<ul>
+<li>Fresados de pisos y paredes.</li>
+<li>Fresado de caras.</li>
+<li>Fresado planario.</li>
+<li>Fresado de cavidades.</li>
+<li>Fresado de paredes en Z.</li>
+</ul>
+<h4 id="diferencias-con-mecanizado-3d">Diferencias con mecanizado 3d</h4>
+<p>Habitualmente, las estrategias de corte de 2.5 ejes se usan para desbastar y para realizar mecanizados rápidos en piezas sencillas. También son usadas en superficies curvadas cuando el acabado superficial no es crítico y puede permitirse cierto escalonado en las paredes inclinadas.</p>
+<p>Las operaciones de mecanizado en 3 ejes continuos se emplean para dar una mayor calidad en el acabado superficial, en cuanto al tipo de rugosidad y crestas se refiere.</p>
+<p>La decisión de emplear operaciones de 2.5 ejes o 3 ejes radicará en dos factores: el acabado superficial y la complejidad geométrica de la pieza.</p>
+<p>Cuando se aborda el mecanizado de una pieza relativamente compleja (por ejemplo la mostrada anteriormente) es recomendable combinar las operaciones de mecanizado de 2.5 ejes y de 3 ejes. Primero se desbasta la pieza con mecanizados de 2.5 ejes y se finaliza en 3 ejes.</p>
+<hr>
+<h3 id="3-silla-fresia">3) Silla Fresia</h3>
+<div>
+    <iframe 
+    src="https://alumnos2130.autodesk360.com/shares/public/SH56a43QTfd62c1cd968f41b92676addf129?mode=embed" 
+    width="100%" 
+    height="450" 
+    allowfullscreen="true" 
+    webkitallowfullscreen="true" 
+    mozallowfullscreen="true"  
+    frameborder="0">
+    </iframe>    
+</div>
+
+
+<hr>
+<h3 id="4-respaldo">4) Respaldo</h3>
+<p><img src="/img/m25d/2.png" alt="2.5d"></p>
+<h5 id="tutorial-parte-1">Tutorial parte 1</h5>
+<ul>
+<li>Cara superior</li>
+</ul>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/6.m4v"  type="video/mp4">
+    </video>
+</div>
+<hr>
+<h5 id="tutotial-parte-2">Tutotial parte 2</h5>
+<ul>
+<li>Cara inferior</li>
+</ul>
+<div>
+    <video 
+    width="100%" 
+    height="450" 
+    autoplay muted loop controls preload>
+    <source src="/img/"  type="video/mp4">
+    </video>
+</div>
+<hr>
+<h3 id="5-galeria">5) Galeria</h3>
+<p>
+<link rel="stylesheet" href="/css/hugo-easy-gallery.css" />
+
+<div class="gallery caption-position-bottom caption-effect-slide hover-effect-zoom hover-transition" itemscope itemtype="http://schema.org/ImageGallery">
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://nespinosae.github.io/img/galeria2//10.jpg');" >
+				      <img itemprop="thumbnail" src="https://nespinosae.github.io/img/galeria2//10.jpg" alt="10th" />
+				    </div>
+			      <figcaption>
+		          <p>10th</p>
+			      </figcaption>
+				    <a href="https://nespinosae.github.io/img/galeria2//10.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://nespinosae.github.io/img/galeria2//3.jpg');" >
+				      <img itemprop="thumbnail" src="https://nespinosae.github.io/img/galeria2//3.jpg" alt="3rd" />
+				    </div>
+			      <figcaption>
+		          <p>3rd</p>
+			      </figcaption>
+				    <a href="https://nespinosae.github.io/img/galeria2//3.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+				<div class="box">
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				    <div class="img" style="background-image: url('https://nespinosae.github.io/img/galeria2//5.jpg');" >
+				      <img itemprop="thumbnail" src="https://nespinosae.github.io/img/galeria2//5.jpg" alt="5th" />
+				    </div>
+			      <figcaption>
+		          <p>5th</p>
+			      </figcaption>
+				    <a href="https://nespinosae.github.io/img/galeria2//5.jpg" itemprop="contentUrl"></a>
+				  </figure>
+				</div>
+</div>
+ 
+
+
+
+  
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="/js/load-photoswipe.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.css" integrity="sha256-sCl5PUOGMLfFYctzDW3MtRib0ctyUvI9Qsmq2wXOeBY=" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css" integrity="sha256-BFeI1V+Vh1Rk37wswuOYn5lsTcaU96hGaI7OUVCLjPc=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js" integrity="sha256-UplRCs9v4KXVJvVY+p+RSo5Q4ilAUXh7kpjyIP5odyc=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js" integrity="sha256-PWHOlUzc96pMc8ThwRIXPn8yH4NOLu42RQ0b9SpnpFk=" crossorigin="anonymous"></script>
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+</p>
+
+</div>
+</div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="sub-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer-inner">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/scripts.min.1237ff71925bb8625c97a9af8db4c54525258bedfd7c47493daaff723bea755e.js"></script>
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+
+</html>

@@ -39,7 +39,7 @@
     </item>
     
     <item>
-      <title>DCW Chair</title>
+      <title>1. DCW Chair</title>
       <link>https://nespinosae.github.io/docs/dcw-chair/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
@@ -49,12 +49,21 @@
     </item>
     
     <item>
-      <title>Mecanizado CNC</title>
+      <title>2. Mecanizado CNC</title>
       <link>https://nespinosae.github.io/docs/mecanizado-cnc/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
       <guid>https://nespinosae.github.io/docs/mecanizado-cnc/</guid>
       <description>En esta sección de mecanizado CNC, explicaré cual es el funcionamiento de esta maquina, entregaré un link para descargar su manual de uso y finalmente mostraré un video paso a paso de como hacer que un objeto 3d (en este caso la silla Fresia) se pueda configurar en Fusion 360 para que luego sea cortada.</description>
+    </item>
+    
+    <item>
+      <title>3. Moldeo y Fundición</title>
+      <link>https://nespinosae.github.io/docs/moldeo-y-fundici%C3%B3n/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://nespinosae.github.io/docs/moldeo-y-fundici%C3%B3n/</guid>
+      <description>En esta sección de moldeo y fundición, explicaré que es el mecanizado 2.5D y luego mediante la tecnica de desbaste mostraré paso a paso como aplicarla en la silla fresia.</description>
     </item>
     
   </channel>
