@@ -58,12 +58,21 @@
     </item>
     
     <item>
-      <title>3. Moldeo y Fundición</title>
-      <link>https://nespinosae.github.io/docs/moldeo-y-fundici%C3%B3n/</link>
+      <title>3. Mecanizado 2.5D</title>
+      <link>https://nespinosae.github.io/docs/mecanizado-2.5d/</link>
       <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
       
-      <guid>https://nespinosae.github.io/docs/moldeo-y-fundici%C3%B3n/</guid>
-      <description>En esta sección de moldeo y fundición, explicaré que es el mecanizado 2.5D y luego mediante la tecnica de desbaste mostraré paso a paso como aplicarla en la silla fresia.</description>
+      <guid>https://nespinosae.github.io/docs/mecanizado-2.5d/</guid>
+      <description>En esta sección de moldeo y fundición, explicaré que es el mecanizado 2.5D y luego mediante la tecnica de desbaste mostraré paso a paso como aplicarla en el respaldo de la silla fresia.</description>
+    </item>
+    
+    <item>
+      <title>4. Bonus 01</title>
+      <link>https://nespinosae.github.io/docs/bonus/</link>
+      <pubDate>Wed, 17 Jun 2020 19:30:08 +1000</pubDate>
+      
+      <guid>https://nespinosae.github.io/docs/bonus/</guid>
+      <description>En contrucción [Volver Arriba]</description>
     </item>
     
   </channel>
